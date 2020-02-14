@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cms" />
+        <module name="nm-service-api" />
+        <module name="test-rabbitmq-producer" />
+        <module name="nm-framework-utils" />
+        <module name="untitled" />
+        <module name="test-rabbitmq-consumer" />
+        <module name="nm-service-manage-cms-client" />
+        <module name="nm-framework-model" />
+        <module name="nm-service-manage-cms" />
+        <module name="nm-framework-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cms" target="1.8" />
+      <module name="nm-framework-common" target="1.8" />
+      <module name="nm-framework-model" target="1.8" />
+      <module name="nm-framework-parent" target="1.8" />
+      <module name="nm-framework-utils" target="1.8" />
+      <module name="nm-service-api" target="1.8" />
+      <module name="nm-service-manage-cms" target="1.8" />
+      <module name="nm-service-manage-cms-client" target="1.8" />
+      <module name="test-rabbitmq-consumer" target="1.8" />
+      <module name="test-rabbitmq-producer" target="1.8" />
+      <module name="untitled" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cms" options="-parameters" />
+      <module name="nm-framework-common" options="-parameters" />
+      <module name="nm-framework-model" options="-parameters" />
+      <module name="nm-framework-utils" options="-parameters" />
+      <module name="nm-service-api" options="-parameters" />
+      <module name="nm-service-manage-cms" options="-parameters" />
+      <module name="nm-service-manage-cms-client" options="-parameters" />
+      <module name="test-rabbitmq-consumer" options="-parameters" />
+      <module name="test-rabbitmq-producer" options="-parameters" />
+      <module name="untitled" options="-parameters" />
+    </option>
+  </component>
+</project>

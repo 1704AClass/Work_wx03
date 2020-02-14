@@ -1,0 +1,17 @@
+server:
+  port: 31001
+spring:
+   application:
+     name:test-rabbitmq-consumer
+   data:
+    rabbitmq:
+      host: 127.0.0.1
+      port: 5672
+      username: guest
+      password: guest
+      virtualHost: /
+ningmeng:
+  mq:
+    queue: queue_cms_postpage_01
+
+    routingKey: 5a751fab6abb5044e0d19eal

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/code.iml" filepath="$PROJECT_DIR$/.idea/code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-framework-common/nm-framework-common.iml" filepath="$PROJECT_DIR$/nm-framework-common/nm-framework-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-framework-model/nm-framework-model.iml" filepath="$PROJECT_DIR$/nm-framework-model/nm-framework-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-framework-parent.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-framework-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-framework-utils/nm-framework-utils.iml" filepath="$PROJECT_DIR$/nm-framework-utils/nm-framework-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-service-api/nm-service-api.iml" filepath="$PROJECT_DIR$/nm-service-api/nm-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms/nm-service-manage-cms.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms/nm-service-manage-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms-client/nm-service-manage-cms-client.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms-client/nm-service-manage-cms-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/test-rabbitmq-consumer/test-rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/nm-framework-parent/test-rabbitmq-consumer/test-rabbitmq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/test-rabbitmq-producer/test-rabbitmq-producer.iml" filepath="$PROJECT_DIR$/nm-framework-parent/test-rabbitmq-producer/test-rabbitmq-producer.iml" />
+    </modules>
+  </component>
+</project>

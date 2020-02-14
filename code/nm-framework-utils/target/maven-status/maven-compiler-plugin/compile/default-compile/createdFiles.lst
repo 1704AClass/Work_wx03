@@ -1,0 +1,15 @@
+com\ningmeng\framework\utils\HttpClient$1.class
+com\ningmeng\framework\utils\CookieUtil.class
+com\ningmeng\framework\utils\XcOauth2Util.class
+com\ningmeng\framework\utils\HlsVideoUtil.class
+com\ningmeng\framework\utils\Mp4VideoUtil.class
+com\ningmeng\framework\utils\SnowflakeIdWorker.class
+com\ningmeng\framework\utils\HttpClient.class
+com\ningmeng\framework\utils\BCryptUtil.class
+com\ningmeng\framework\utils\ZipUtil.class
+com\ningmeng\framework\utils\GenerateOrderNum.class
+com\ningmeng\framework\utils\VideoUtil.class
+com\ningmeng\framework\utils\XcOauth2Util$UserJwt.class
+com\ningmeng\framework\utils\Snowflake.class
+com\ningmeng\framework\utils\MD5Util.class
+com\ningmeng\framework\utils\Oauth2Util.class

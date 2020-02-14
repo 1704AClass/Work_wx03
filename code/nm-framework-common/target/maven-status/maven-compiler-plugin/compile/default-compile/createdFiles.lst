@@ -1,0 +1,9 @@
+com\ningmeng\framework\model\response\ResultCode.class
+com\ningmeng\framework\model\request\RequestData.class
+com\ningmeng\framework\model\response\ResponseResult.class
+com\ningmeng\framework\client\NmServiceList.class
+com\ningmeng\framework\model\response\QueryResponseResult.class
+com\ningmeng\framework\web\BaseController.class
+com\ningmeng\framework\model\response\CommonCode.class
+com\ningmeng\framework\model\response\QueryResult.class
+com\ningmeng\framework\model\response\Response.class
