@@ -5,4 +5,10 @@ spring:
     name: nm-service-manage-cms
   data:
     mongodb:
-      uri:  mongodb://localhost:27017/nm_cms
+      uri: mongodb://localhost:27017/m_cms
+  rabbitmq:
+    host: 127.0.0.1c
+    port: 5672
+    username: guest
+    password: guest
+    virtualHost: /

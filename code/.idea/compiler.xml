@@ -9,13 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cms" />
         <module name="nm-service-api" />
+        <module name="nm-service-manage-course" />
         <module name="test-rabbitmq-producer" />
-        <module name="nm-framework-utils" />
-        <module name="untitled" />
+        <module name="nm-framework-model" />
         <module name="test-rabbitmq-consumer" />
         <module name="nm-service-manage-cms-client" />
-        <module name="nm-framework-model" />
         <module name="nm-service-manage-cms" />
+        <module name="nm-framework-utils" />
         <module name="nm-framework-common" />
       </profile>
     </annotationProcessing>
@@ -28,6 +28,7 @@
       <module name="nm-service-api" target="1.8" />
       <module name="nm-service-manage-cms" target="1.8" />
       <module name="nm-service-manage-cms-client" target="1.8" />
+      <module name="nm-service-manage-course" target="1.8" />
       <module name="test-rabbitmq-consumer" target="1.8" />
       <module name="test-rabbitmq-producer" target="1.8" />
       <module name="untitled" target="1.8" />
@@ -42,6 +43,7 @@
       <module name="nm-service-api" options="-parameters" />
       <module name="nm-service-manage-cms" options="-parameters" />
       <module name="nm-service-manage-cms-client" options="-parameters" />
+      <module name="nm-service-manage-course" options="-parameters" />
       <module name="test-rabbitmq-consumer" options="-parameters" />
       <module name="test-rabbitmq-producer" options="-parameters" />
       <module name="untitled" options="-parameters" />

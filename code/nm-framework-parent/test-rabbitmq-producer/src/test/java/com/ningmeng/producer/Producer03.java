@@ -32,20 +32,16 @@ public class Producer03 {
 
             channel.queueBind(QUEUE_INFORM_EMAIL,EXCHANGE_ROUTING_INFORM,QUEUE_INFORM_EMAIL);
             channel.queueBind(QUEUE_INFORM_SMS,EXCHANGE_ROUTING_INFORM,QUEUE_INFORM_SMS);
-
             for (int i=0;i<10;i++){
-
-                String message = "干他"+i;
+                String message = "孟江龙"+i;
                 channel.basicPublish(EXCHANGE_ROUTING_INFORM, QUEUE_INFORM_EMAIL, null, message.getBytes());
                 System.out.println("Send Message is:'" + message + "'");
             }
              for (int i=0;i<10;i++){
-                 String message = "我就是暗裔"+i;
+                 String message = "我是孟江龙"+i;
                  channel.basicPublish(EXCHANGE_ROUTING_INFORM, QUEUE_INFORM_SMS, null, message.getBytes());
                  System.out.println("Send Message is:'" + message + "'");
              }
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }

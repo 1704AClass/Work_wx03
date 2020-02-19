@@ -1,5 +1,6 @@
 package com.ningmeng.manage_cms.service;
 
+import com.alibaba.fastjson.JSON;
 import com.ningmeng.framework.domain.cms.CmsPage;
 import com.ningmeng.framework.domain.cms.request.QueryPageRequest;
 import com.ningmeng.framework.domain.cms.response.CmsCode;
@@ -8,7 +9,10 @@ import com.ningmeng.framework.exception.CustomExceptionCast;
 import com.ningmeng.framework.model.response.CommonCode;
 import com.ningmeng.framework.model.response.QueryResponseResult;
 import com.ningmeng.framework.model.response.QueryResult;
+import com.ningmeng.framework.model.response.ResponseResult;
+import com.ningmeng.manage_cms.config.RabbitmqConfig;
 import com.ningmeng.manage_cms.dao.cmsPageRepository;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
@@ -16,13 +20,43 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
 public class CmsPageService {
     @Autowired
     private cmsPageRepository repository;
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
 
+    public ResponseResult postPage(String pageId){
+        boolean flag = createHtml();
+        if(!flag){
+            CustomExceptionCast.cast(CommonCode.FAIL);
+        }
+        //查询数据库
+        CmsPage cmsPage = this.findOne(pageId);
+        if(cmsPage == null){
+            System.out.print("我是空的");
+            CustomExceptionCast.cast(CommonCode.FAIL);
+        }
+        Map<String,String> msgMap = new HashMap<>();
+        msgMap.put("pageId",pageId);
+        //消息内容
+        String msg = JSON.toJSONString(msgMap);
+        //获取站点id作为routingKey
+        String siteId = cmsPage.getSiteId();
+        //发送jsonpageId
+        rabbitTemplate.convertAndSend(RabbitmqConfig.EX_ROUTING_CMS_POSTPAGE,siteId,msg);
+        return new ResponseResult(CommonCode.SUCCESS);
+    }
+    //创建静态页面
+    public boolean createHtml(){
+        System.out.println("静态化完成");
+        return true;
+    }
     public QueryResponseResult findList(int page, int size, QueryPageRequest queryPageRequest) {
         if (queryPageRequest == null) {
             queryPageRequest = new QueryPageRequest();
@@ -86,12 +120,11 @@ public class CmsPageService {
     }
 
     public CmsPageResult delete(String id) {
-
         CmsPage cmsPage = this.findOne(id);
-    if (cmsPage!=null){
-        repository.deleteById(id);
-        return new CmsPageResult(CommonCode.SUCCESS, cmsPage);
-    }
+        if (cmsPage!=null){
+            repository.deleteById(id);
+            return new CmsPageResult(CommonCode.SUCCESS, cmsPage);
+        }
         return new CmsPageResult(CommonCode.FAIL, null);
-}
+    }
 }

@@ -28,15 +28,12 @@ public class Producer01 {
 
                 channel.queueDeclare(QUEUE,true,false,false,null);
 
-                String manage = "德玛西亚";
+                String manage = "孟江龙";
                 System.out.println("send"+manage+",时间"+new Date());
                 channel.basicPublish("",QUEUE,null,manage.getBytes());
 
             }catch (Exception e){
                 e.printStackTrace();
             }
-
     }
-
-
 }

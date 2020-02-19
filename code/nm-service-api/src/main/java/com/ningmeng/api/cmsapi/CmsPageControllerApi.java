@@ -4,6 +4,7 @@ import com.ningmeng.framework.domain.cms.CmsPage;
 import com.ningmeng.framework.domain.cms.request.QueryPageRequest;
 import com.ningmeng.framework.domain.cms.response.CmsPageResult;
 import com.ningmeng.framework.model.response.QueryResponseResult;
+import com.ningmeng.framework.model.response.ResponseResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -26,4 +27,6 @@ public interface CmsPageControllerApi {
     public CmsPageResult update(CmsPage cmsPage);
     @ApiOperation("删除方法")
     public CmsPageResult delete(String id);
+    @ApiOperation("发布页面")
+    public ResponseResult post(String pageId);
 }

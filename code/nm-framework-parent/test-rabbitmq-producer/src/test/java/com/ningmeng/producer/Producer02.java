@@ -43,7 +43,7 @@ public class Producer02 {
             channel.queueBind(QUEUE_INFORM_SMS,EXCHANGE_FANOUT_INFORM,"");
 
             for (int i = 0;i<5;i++){
-                String manage = "德玛西亚";
+                String manage = "孟江龙";
                 channel.basicPublish(EXCHANGE_FANOUT_INFORM,"",null,manage.getBytes());
                 System.out.println("send"+manage+",时间"+new Date());
             }
@@ -51,8 +51,5 @@ public class Producer02 {
         }catch (Exception e){
             e.printStackTrace();
         }
-
     }
-
-
 }

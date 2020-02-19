@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/nm-service-api/nm-service-api.iml" filepath="$PROJECT_DIR$/nm-service-api/nm-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms/nm-service-manage-cms.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms/nm-service-manage-cms.iml" />
       <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms-client/nm-service-manage-cms-client.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms-client/nm-service-manage-cms-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-service-manage-course/nm-service-manage-course.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-service-manage-course/nm-service-manage-course.iml" />
       <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/test-rabbitmq-consumer/test-rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/nm-framework-parent/test-rabbitmq-consumer/test-rabbitmq-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/test-rabbitmq-producer/test-rabbitmq-producer.iml" filepath="$PROJECT_DIR$/nm-framework-parent/test-rabbitmq-producer/test-rabbitmq-producer.iml" />
     </modules>
