@@ -6,10 +6,7 @@ import com.ningmeng.framework.domain.cms.request.QueryPageRequest;
 import com.ningmeng.framework.domain.cms.response.CmsCode;
 import com.ningmeng.framework.domain.cms.response.CmsPageResult;
 import com.ningmeng.framework.exception.CustomExceptionCast;
-import com.ningmeng.framework.model.response.CommonCode;
-import com.ningmeng.framework.model.response.QueryResponseResult;
-import com.ningmeng.framework.model.response.QueryResult;
-import com.ningmeng.framework.model.response.ResponseResult;
+import com.ningmeng.framework.model.response.*;
 import com.ningmeng.manage_cms.config.RabbitmqConfig;
 import com.ningmeng.manage_cms.dao.cmsPageRepository;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -88,7 +85,7 @@ public class CmsPageService {
 
     }
 
-    public CmsPageResult add(CmsPage cmsPage) {
+    public ResponseResult add(CmsPage cmsPage) {
         if(cmsPage==null){
             CustomExceptionCast.cast(CommonCode.FAIL);
         }
@@ -97,9 +94,12 @@ public class CmsPageService {
          CustomExceptionCast.cast(CmsCode.CMS_ADDPAGE_EXISTSNAME);
         }
         cmsPage.setPageId(null);
-        repository.save(cmsPage);
-        CmsPageResult cmsPageResult = new CmsPageResult(CommonCode.SUCCESS, cmsPage);
-        return cmsPageResult;
+        CmsPage cmsPage1 = repository.save(cmsPage);
+        ResponseResult responseResult = new ResponseResult();
+        responseResult.setCode(1000);
+        responseResult.setSuccess(true);
+        responseResult.setMessage(JSON.toJSONString(cmsPage1));
+        return responseResult;
     }
 
     public CmsPage findOne(String id) {
@@ -126,5 +126,10 @@ public class CmsPageService {
             return new CmsPageResult(CommonCode.SUCCESS, cmsPage);
         }
         return new CmsPageResult(CommonCode.FAIL, null);
+    }
+
+    public String preview(String pageId) {
+
+        return null;
     }
 }

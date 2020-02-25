@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/angular_js/angular.min.js"></script>
+    <link rel="stylesheet" href="../js/adminLTE/css/AdminLTE.css">
+    <link rel="stylesheet" href="../js/bootstrap/css/bootstrap.css">
+    <script src="../js/bootstrap/js/bootstrap.js"></script>
+</head>
+<body class="hold-transition skin-red sidebar-mini" ng-app="listApp" ng-controller="listCtrl" ng-init="selectAll()">
+<span>{{msg}}</span>
+<input type="button" value="查询商品" ng-click="tiao()">
+<input type="button" value="同步数据" ng-click="solrList()">
+<table id="dataList" class="table table-bordered table-striped table-hover dataTable">
+    <thead>
+    <tr>
+        <td class="" style="padding-right:0px"></td>
+        <td>序号</td>
+        <td>商品名称</td>
+        <td>价格</td>
+        <td>品牌</td>
+        <td>数量</td>
+        <td>上架时间</td>
+        <td>审核状态</td>
+        <td>操作
+            <button type="button" class="btn btn-default" title="新建" data-toggle="modal" data-target="#editModal"
+                    ng-click="user={}"><i class="fa fa-file-o"></i> 新建
+            </button>
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="user in users">
+        <td><input type="checkbox" ng-click="deleteId($event,user.id)"></td>
+        <td ng-bind="user.id"></td>
+        <td ng-bind="user.gname"></td>
+        <td ng-bind="user.price"></td>
+        <td ng-bind="user.seller"></td>
+        <td ng-bind="user.number"></td>
+        <td ng-bind="user.creattime"></td>
+        <td>
+            <span ng-if="user.state==0">
+                驳回
+            </span>
+            <span ng-if="user.state==1">
+                待审核
+            </span>
+            <span ng-if="user.state==2">
+                审核通过
+            </span>
+        </td>
+
+        <td class="text-center">
+            <input type="button" ng-if="user.state==1" value="通过" ng-click="tong(user.id)">
+            <input type="button" ng-if="user.state==1" value="驳回" ng-click="bo(user.id)">
+            <!--<button type="button" class="btn bg-olive btn-xs" data-toggle="modal" data-target="#editModal"
+                    ng-click="findOne(user.id)">修改
+            </button>-->
+        </td>
+    </tr>
+    <tbody>
+    <tr>
+        <td class="text-center" colspan="7">
+            <input type="button" value="首页" ng-click="listpage(1)"/>
+            <input type="button" value="上一页" ng-click="listpage(pageInfo.prePage)"/>
+            <span ng-repeat="n in pageInfo.navigatepageNums">
+                <input type="button" value="{{n}}" ng-click="listpage(n)"/>
+            </span>
+            <input type="button" value="下一页" ng-click="listpage(pageInfo.nextPage)"/>
+            <input type="button" value="尾页" ng-click="listpage(pageInfo.pages)"/>
+        </td>
+    </tr>
+</table>
+<!-- 编辑窗口 -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">用戶编辑</h3>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered table-striped" width="800px">
+                    <tr>
+                        <td>用户名</td>
+                        <td><input class="form-control" placeholder="用户名" ng-model="user.name"></td>
+                    </tr>
+                    <tr>
+                        <td>年龄</td>
+                        <td><input class="form-control" placeholder="年龄" ng-model="user.pwd"></td>
+                    </tr>
+
+                    <tr>
+                        <td>简介</td>
+                        <td><input class="form-control" placeholder="请简介品牌" ng-model="user.content"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" data-dismiss="modal" aria-hidden="true" ng-click="save()">保存</button>
+                <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var app = angular.module("listApp", []);
+    app.controller("listCtrl", function ($scope, $http) {
+
+        }
+    });
+</script>

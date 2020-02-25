@@ -22,7 +22,7 @@ public class CmsPageController implements CmsPageControllerApi {
     }
     @Override
     @PostMapping("/add")
-    public CmsPageResult add(@RequestBody CmsPage cmsPage) {
+    public ResponseResult add(@RequestBody CmsPage cmsPage) {
        return service.add(cmsPage);
     }
 
@@ -48,5 +48,9 @@ public class CmsPageController implements CmsPageControllerApi {
     @PostMapping("/postPage/{pageId}")
     public ResponseResult post(String pageId) {
         return service.postPage(pageId);
+    }
+    @GetMapping("/preview/{pageId}")
+    public String preview(@PathVariable("pageId") String pageId){
+        return service.preview(pageId);
     }
 }

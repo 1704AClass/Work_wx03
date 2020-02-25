@@ -5,4 +5,11 @@
             resultType="com.ningmeng.framework.domain.course.CourseBase">
         select * from course_base where id = #{id}
     </select>
+    <select id="findCourseListPage" resultType="com.ningmeng.framework.domain.course.ext.CourseInfo"
+            parameterType="java.lang.String">
+        SELECT * FROM course_base  b
+        LEFT JOIN course_pic p
+        ON p.courseid=b.id
+        where b.company_id=#{companyId}
+    </select>
 </mapper>

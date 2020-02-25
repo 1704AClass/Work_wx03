@@ -1,5 +1,5 @@
 server:
-  port: 31200
+  port: ${PORT:31200}
 spring:
   application:
     name: nm-service-manage-course
@@ -17,3 +17,22 @@ spring:
       testOnReturn: false #归还连接时检测连接是否有效
       timeBetweenEvictionRunsMillis: 60000 #配置间隔检测连接是否有效的时间（单位是毫秒）
       minEvictableIdleTimeMillis: 300000  #连接在连接池的最小生存时间（毫秒）
+pagehelper:
+  auto-dialect: mysql
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:50101/eureka/}
+  instance:
+    prefer-ip-address: true
+    ip-address: ${IP_ADDRESS:127.0.0.1}
+    instance-id: ${spring.application.name}:${server.port}
+course-publish:
+  siteId: 5b30cba5f58b4411fc6cb1e5
+  templateId: 5b345a6b94db44269cb2bfec
+  previewUrl: http://www.ningmeng.com/cms/preview/
+  pageWebPath: /course/detail/
+  pagePhysicalPath: /course/detail/
+  dataUrlPre: http://localhost:31200/course/courseview/

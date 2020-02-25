@@ -7,7 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/nm-framework-model/nm-framework-model.iml" filepath="$PROJECT_DIR$/nm-framework-model/nm-framework-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-framework-parent.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-framework-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/nm-framework-utils/nm-framework-utils.iml" filepath="$PROJECT_DIR$/nm-framework-utils/nm-framework-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-govern-center/nm-govern-center.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-govern-center/nm-govern-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/nm-service-api/nm-service-api.iml" filepath="$PROJECT_DIR$/nm-service-api/nm-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-service-base-filesystem/nm-service-base-filesystem.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-service-base-filesystem/nm-service-base-filesystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms/nm-service-manage-cms.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms/nm-service-manage-cms.iml" />
       <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms-client/nm-service-manage-cms-client.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-service-manage-cms-client/nm-service-manage-cms-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/nm-framework-parent/nm-service-manage-course/nm-service-manage-course.iml" filepath="$PROJECT_DIR$/nm-framework-parent/nm-service-manage-course/nm-service-manage-course.iml" />

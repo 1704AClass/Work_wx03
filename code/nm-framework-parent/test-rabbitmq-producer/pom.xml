@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>test-rabbitmq-producer</artifactId>
+    <artifactId>Test-rabbitmq-producer</artifactId>
 
     <dependencies>
         <dependency>

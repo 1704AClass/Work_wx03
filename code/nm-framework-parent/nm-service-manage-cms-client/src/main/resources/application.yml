@@ -5,7 +5,7 @@ spring:
     name: nm‐service‐manage‐cms‐client
   data:
     mongodb:
-      uri: mongodb://localhost:27017/nm_cms
+      uri: mongodb://root:123@localhost:27017
       database: nm_cms
   rabbitmq:
     host: 127.0.0.1
