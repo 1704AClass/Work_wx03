@@ -124,4 +124,10 @@ public class CourseController implements CourseControllerApi {
         return service.preview(id);
     }
 
+    @Override
+    @PostMapping("/publish/{id}")
+    public CoursePublishResult publish(@PathVariable("id") String id) {
+        return service.publish(id);
+    }
+
 }

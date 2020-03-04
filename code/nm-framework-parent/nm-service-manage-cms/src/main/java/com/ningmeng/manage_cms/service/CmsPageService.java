@@ -2,12 +2,19 @@ package com.ningmeng.manage_cms.service;
 
 import com.alibaba.fastjson.JSON;
 import com.ningmeng.framework.domain.cms.CmsPage;
+import com.ningmeng.framework.domain.cms.CmsSite;
 import com.ningmeng.framework.domain.cms.request.QueryPageRequest;
 import com.ningmeng.framework.domain.cms.response.CmsCode;
 import com.ningmeng.framework.domain.cms.response.CmsPageResult;
+import com.ningmeng.framework.domain.cms.response.CmsPostPageResult;
+import com.ningmeng.framework.domain.course.response.CoursePublishResult;
 import com.ningmeng.framework.exception.CustomExceptionCast;
-import com.ningmeng.framework.model.response.*;
+import com.ningmeng.framework.model.response.CommonCode;
+import com.ningmeng.framework.model.response.QueryResponseResult;
+import com.ningmeng.framework.model.response.QueryResult;
+import com.ningmeng.framework.model.response.ResponseResult;
 import com.ningmeng.manage_cms.config.RabbitmqConfig;
+import com.ningmeng.manage_cms.dao.CmsSiteRepository;
 import com.ningmeng.manage_cms.dao.cmsPageRepository;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +34,9 @@ public class CmsPageService {
     private cmsPageRepository repository;
     @Autowired
     private RabbitTemplate rabbitTemplate;
+
+    @Autowired
+    private CmsSiteRepository cmsSiteRepository;
 
     public ResponseResult postPage(String pageId){
         boolean flag = createHtml();
@@ -132,4 +142,55 @@ public class CmsPageService {
 
         return null;
     }
+    public CmsPostPageResult postPageQuick(CmsPage cmsPage){
+        if (cmsPage == null){
+            CustomExceptionCast.cast(CommonCode.FAIL);
+        }
+
+        ResponseResult responseResult = this.add(cmsPage);
+        if (!responseResult.isSuccess()){
+            return new CmsPostPageResult(CommonCode.FAIL,null);
+        }
+        CmsPage cmsPage1 =  JSON.parseObject(responseResult.getMessage(),CmsPage.class);
+
+        String pageId = cmsPage1.getPageId();
+
+        ResponseResult responseResult1 = this.postPage(pageId);
+
+        if (!responseResult.isSuccess()){
+            return new CmsPostPageResult(CommonCode.FAIL,null);
+        }
+        //得到页面的url
+        // 页面url=站点域名+站点webpath+页面webpath+页面名称
+        // 站点id
+        String siteId = cmsPage1.getSiteId();
+        // 查询站点信息
+        CmsSite cmsSite = findCmsSiteById(siteId);
+         // 站点域名
+        String siteDomain = cmsSite.getSiteDomain();
+        //站点web路径
+        String siteWebPath = cmsSite.getSiteWebPath();
+        //页面web路径
+         String pageWebPath = cmsPage1.getPageWebPath();
+         String pageName = cmsPage1.getPageName();
+         //页面的web访问地址
+         String pageUrl = siteDomain+siteWebPath+pageWebPath+pageName;
+         return new CmsPostPageResult(CommonCode.SUCCESS,pageUrl);
+
+    }
+
+    private CmsSite findCmsSiteById(String siteId){
+        return cmsSiteRepository.findById(siteId).get();
+    }
+
+    public CoursePublishResult pulish(){
+        return null;
+    }
+
+//    private Map getModelByPageId(String pageId){
+//        CmsPage cmsPage = cmsPageRepository.findById(pageId).get();
+//        String dataUrl = cmsPage.getDataUrl();
+//        Map body = null;
+//        return body;
+//    }
 }

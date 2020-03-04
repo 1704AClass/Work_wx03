@@ -7,35 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cms" />
-        <module name="nm-govern-center" />
         <module name="nm-service-api" />
-        <module name="nm-service-manage-course" />
+        <module name="nm-govern-center" />
+        <module name="nm-service-search" />
         <module name="test-rabbitmq-producer" />
-        <module name="nm-framework-utils" />
-        <module name="untitled" />
+        <module name="nm-service-manage-course" />
+        <module name="nm-framework-model" />
         <module name="test-rabbitmq-consumer" />
         <module name="nm-service-base-filesystem" />
         <module name="nm-service-manage-cms-client" />
-        <module name="nm-framework-model" />
+        <module name="nm-framework-utils" />
         <module name="nm-service-manage-cms" />
         <module name="nm-framework-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cms" target="1.8" />
-      <module name="nm-framework-common" target="1.8" />
-      <module name="nm-framework-model" target="1.8" />
-      <module name="nm-framework-parent" target="1.8" />
-      <module name="nm-framework-utils" target="1.8" />
-      <module name="nm-govern-center" target="1.8" />
-      <module name="nm-service-api" target="1.8" />
-      <module name="nm-service-base-filesystem" target="1.8" />
-      <module name="nm-service-manage-cms" target="1.8" />
-      <module name="nm-service-manage-cms-client" target="1.8" />
-      <module name="nm-service-manage-course" target="1.8" />
-      <module name="test-rabbitmq-consumer" target="1.8" />
-      <module name="test-rabbitmq-producer" target="1.8" />
       <module name="untitled" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -51,6 +38,7 @@
       <module name="nm-service-manage-cms" options="-parameters" />
       <module name="nm-service-manage-cms-client" options="-parameters" />
       <module name="nm-service-manage-course" options="-parameters" />
+      <module name="nm-service-search" options="-parameters" />
       <module name="test-rabbitmq-consumer" options="-parameters" />
       <module name="test-rabbitmq-producer" options="-parameters" />
       <module name="untitled" options="-parameters" />
