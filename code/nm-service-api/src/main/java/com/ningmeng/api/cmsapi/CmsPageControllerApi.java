@@ -30,6 +30,7 @@ public interface CmsPageControllerApi {
     public CmsPageResult delete(String id);
     @ApiOperation("发布页面")
     public ResponseResult post(String pageId);
-    @ApiOperation("一键发布接口")
+    @ApiOperation("一键发布页面")
     public CmsPostPageResult postPageQuick(CmsPage cmsPage);
+
 }

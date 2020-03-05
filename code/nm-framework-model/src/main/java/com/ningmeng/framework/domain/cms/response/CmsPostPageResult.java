@@ -9,13 +9,11 @@ import lombok.ToString;
 @Data
 @ToString
 @NoArgsConstructor
-public class CmsPostPageResult extends ResponseResult {
+public class CmsPostPageResult  extends ResponseResult {
     String pageUrl;
-    public CmsPostPageResult(ResultCode resultCode,String pageUrl){
+
+    public  CmsPostPageResult (ResultCode resultCode,String pageUrl){
         super(resultCode);
-        this.pageUrl = pageUrl;
+        this.pageUrl=pageUrl;
     }
-
-
-
 }

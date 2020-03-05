@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface cmsPageRepository extends MongoRepository<CmsPage,String> {
     CmsPage findByPageNameEquals(String pageName);
     CmsPage findBySiteIdAndPageNameAndPageWebPath(String siteId,String pageName,String pageWebPath);
+
 }

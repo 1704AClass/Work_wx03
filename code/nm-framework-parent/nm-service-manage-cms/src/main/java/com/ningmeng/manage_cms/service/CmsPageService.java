@@ -7,7 +7,6 @@ import com.ningmeng.framework.domain.cms.request.QueryPageRequest;
 import com.ningmeng.framework.domain.cms.response.CmsCode;
 import com.ningmeng.framework.domain.cms.response.CmsPageResult;
 import com.ningmeng.framework.domain.cms.response.CmsPostPageResult;
-import com.ningmeng.framework.domain.course.response.CoursePublishResult;
 import com.ningmeng.framework.exception.CustomExceptionCast;
 import com.ningmeng.framework.model.response.CommonCode;
 import com.ningmeng.framework.model.response.QueryResponseResult;
@@ -16,13 +15,16 @@ import com.ningmeng.framework.model.response.ResponseResult;
 import com.ningmeng.manage_cms.config.RabbitmqConfig;
 import com.ningmeng.manage_cms.dao.CmsSiteRepository;
 import com.ningmeng.manage_cms.dao.cmsPageRepository;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -34,7 +36,8 @@ public class CmsPageService {
     private cmsPageRepository repository;
     @Autowired
     private RabbitTemplate rabbitTemplate;
-
+    @Autowired
+    private RestTemplate restTemplate;
     @Autowired
     private CmsSiteRepository cmsSiteRepository;
 
@@ -139,58 +142,81 @@ public class CmsPageService {
     }
 
     public String preview(String pageId) {
+        Map model=getModelByPageId(pageId);
+        if(model==null){
+            CustomExceptionCast.cast(CmsCode.CMS_GENERATEHTML_DATAISNULL);
+        }
+        String template=getTemplateByPageId(pageId);
+        if(StringUtils.isEmpty(template)){
+            CustomExceptionCast.cast(CmsCode.CMS_GENERATEHTML_TEMPLATEISNULL);
+        }
+        String html=generateHtml(template,model);
+        return html;
+    }
 
+    private String generateHtml(String template, Map model) {
+        return "<html></html>";
+    }
+
+    private String getTemplateByPageId(String pageId) {
+        Optional<CmsPage> byId = repository.findById(pageId);
+        if(byId.isPresent()){
+            CmsPage cmsPage = byId.get();
+            String templateId = cmsPage.getTemplateId();
+            return templateId;
+        }
         return null;
     }
-    public CmsPostPageResult postPageQuick(CmsPage cmsPage){
-        if (cmsPage == null){
+
+    private Map getModelByPageId(String pageId) {
+        CmsPage cmsPage = repository.findById(pageId).get();
+        String dataUrl = cmsPage.getDataUrl();
+        ResponseEntity<Map> forEntity = restTemplate.getForEntity(dataUrl, Map.class);
+        Map body = forEntity.getBody();
+        return body;
+    }
+
+    public CmsPostPageResult postPageQuick(CmsPage cmsPage) {
+        if(cmsPage==null){
             CustomExceptionCast.cast(CommonCode.FAIL);
         }
-
-        ResponseResult responseResult = this.add(cmsPage);
-        if (!responseResult.isSuccess()){
+        ResponseResult responseResult=this.add(cmsPage);
+        if(!responseResult.isSuccess()){
             return new CmsPostPageResult(CommonCode.FAIL,null);
         }
-        CmsPage cmsPage1 =  JSON.parseObject(responseResult.getMessage(),CmsPage.class);
-
-        String pageId = cmsPage1.getPageId();
-
-        ResponseResult responseResult1 = this.postPage(pageId);
-
-        if (!responseResult.isSuccess()){
+        CmsPage cmsPage1 = JSON.parseObject(responseResult.getMessage(), CmsPage.class);
+        ResponseResult responseResult1 = this.postPage(cmsPage1.getPageId());
+        if(!responseResult1.isSuccess()){
             return new CmsPostPageResult(CommonCode.FAIL,null);
         }
         //得到页面的url
         // 页面url=站点域名+站点webpath+页面webpath+页面名称
         // 站点id
+        //站点id
         String siteId = cmsPage1.getSiteId();
-        // 查询站点信息
-        CmsSite cmsSite = findCmsSiteById(siteId);
-         // 站点域名
+        //查询站点信息
+        CmsSite cmsSite=findCmsSiteById(siteId);
+        System.err.println("--------------------------"+cmsSite);
+        //站点域名
         String siteDomain = cmsSite.getSiteDomain();
-        //站点web路径
+        //站点web路劲
         String siteWebPath = cmsSite.getSiteWebPath();
         //页面web路径
-         String pageWebPath = cmsPage1.getPageWebPath();
-         String pageName = cmsPage1.getPageName();
-         //页面的web访问地址
-         String pageUrl = siteDomain+siteWebPath+pageWebPath+pageName;
-         return new CmsPostPageResult(CommonCode.SUCCESS,pageUrl);
-
+        String pageWebPath = cmsPage1.getPageWebPath();
+        //页面名称
+        String pageName = cmsPage1.getPageName();
+        //页面的web访问地址
+        String pageUrl=siteDomain+siteWebPath+pageWebPath+pageName;
+        return new CmsPostPageResult(CommonCode.SUCCESS,pageUrl);
     }
 
-    private CmsSite findCmsSiteById(String siteId){
-        return cmsSiteRepository.findById(siteId).get();
-    }
-
-    public CoursePublishResult pulish(){
+    private CmsSite findCmsSiteById(String siteId) {
+        Optional<CmsSite> cmsSiteOptional = cmsSiteRepository.findById(siteId);
+        if(!cmsSiteOptional.isPresent()){
+            CmsSite cmsSite = cmsSiteOptional.get();
+            return cmsSite;
+        }
         return null;
     }
 
-//    private Map getModelByPageId(String pageId){
-//        CmsPage cmsPage = cmsPageRepository.findById(pageId).get();
-//        String dataUrl = cmsPage.getDataUrl();
-//        Map body = null;
-//        return body;
-//    }
 }

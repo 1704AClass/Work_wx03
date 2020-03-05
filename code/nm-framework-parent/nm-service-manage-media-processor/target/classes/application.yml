@@ -1,0 +1,21 @@
+server:
+  port: 31450
+spring:
+  application:
+    name: nm-service-manage-media-processor
+  data:
+    mongodb:
+      uri:  mongodb://localhost:27017/nm_media
+#rabbitmq配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+nm-service-manage-media:
+  mq:
+    queue-media-video-processor: queue_media_video_processor #声明队列名称
+    routingkey-media-video: routingkey_media_video #routingKey的键值
+  video-location: D:/study/ffmpeg/video  #项目视频路径
+  ffmpeg-path: D:/study/ffmpeg/ffmpeg-20180227-fa0c9d6-win64-static/bin/ffmpeg.exe #处理视频使用的插件

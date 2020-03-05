@@ -45,9 +45,10 @@ public class SearchDemo {
         jsonMap.put("name", "spring");
         jsonMap.put("description", "spring");
         jsonMap.put("studymodel", "201001");
-        SimpleDateFormat dateFormat =new SimpleDateFormat("yyyy‐MM‐dd HH:mm:ss");
-        jsonMap.put("timestamp", dateFormat.format(new Date()));
         jsonMap.put("price", 5.6f);
+        jsonMap.put("st","1-2-3");
+        jsonMap.put("mt","1-3");
+        jsonMap.put("grade","20000");
 
         IndexRequest indexRequest = new IndexRequest("nm_course","doc");
         indexRequest = indexRequest.source(jsonMap);

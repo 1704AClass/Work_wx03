@@ -19,4 +19,3 @@ public class CourseView implements Serializable {
     CoursePic coursePic;
     TeachplanNode teachplanNode;
 }
-
