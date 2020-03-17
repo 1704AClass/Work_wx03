@@ -1,0 +1,10 @@
+com\ningmeng\manage_course\dao\TeachplanMapper.class
+com\ningmeng\manage_course\dao\CourseMapper.class
+com\ningmeng\manage_course\dao\CoursePicRepositroy.class
+com\ningmeng\manage_course\ManageCourseApplication.class
+com\ningmeng\manage_course\dao\CourseMarketRepository.class
+com\ningmeng\manage_course\service\CourseService.class
+com\ningmeng\manage_course\service\CategoryService.class
+com\ningmeng\manage_course\dao\TeachplanRepository.class
+com\ningmeng\manage_course\dao\CategoryMapper.class
+com\ningmeng\manage_course\dao\CourseBaseRepository.class

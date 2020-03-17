@@ -1,0 +1,15 @@
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\ManageCourseApplication.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\CoursePicRepositroy.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\CourseBaseRepository.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\service\CourseService.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\service\CategoryService.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\TeachplanMapper.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\controller\CourseController.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\controller\SysDicthinaryController.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\TeachplanRepository.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\CategoryMapper.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\CourseMarketRepository.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\CourseMapper.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\SysDicthinaryRepository.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\controller\CategoryController.java
+D:\idea\code\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\service\SysdictionaryService.java

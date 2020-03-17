@@ -1,0 +1,16 @@
+server:
+  port: ${PORT:50101} #服务端口
+spring:
+  application:
+    name: nm-govern-center #指定服务名
+eureka:
+  client:
+    registerWithEureka: true #服务注册，是否将自己注册到Eureka服务中
+    fetchRegistry: true      #服务发现，是否从Eureka中获取注册信息
+    serviceUrl: #Eureka 客户端与Eureka 服务端的监护地址，高可用状态配置对方的地址，
+      defaultZone: ${EUREKA_SERVER:http://eureka02:50102/eureka/,http://eureka01:50101/eureka/}
+  server:
+    enable-self-preservation: false #是否开启自我的保护模式
+    eviction-interval-timer-in-ms: 60000 #服务注册表清理间隔
+  instance:
+    hostname: ${EUREKA_DOMAIN:eureka01}

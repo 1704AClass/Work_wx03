@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ningmeng.ucenter.dao.NmMenuMapper">
+
+    <select id="selectPermissionByUserId" resultType="com.ningmeng.framework.domain.ucenter.NmMenu"
+        parameterType="java.lang.String">
+        SELECT
+            id,
+            code,
+            p_id pId,
+            menu_name menuName,
+            url,
+            is_menu isMenu,
+            level,
+            sort,
+            status,
+            icon,
+            create_time createTime,
+            update_time updateTime
+            FROM
+            nm_menu
+            WHERE id IN(
+                SELECT menu_id FROM nm_permission WHERE role_id IN(
+                    SELECT role_id FROM nm_user_role WHERE user_id = #{userid}
+                )
+            )
+    </select>
+
+
+</mapper>

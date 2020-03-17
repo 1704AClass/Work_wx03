@@ -23,6 +23,7 @@ com\ningmeng\framework\domain\search\CourseSearchParam.class
 com\ningmeng\framework\domain\media\MediaFileProcess_m3u8.class
 com\ningmeng\framework\domain\cms\CmsConfigModel.class
 com\ningmeng\framework\domain\course\ext\CategoryParameter.class
+com\ningmeng\framework\domain\course\CourseView.class
 com\ningmeng\framework\domain\media\response\CheckChunkResult.class
 com\ningmeng\framework\domain\course\ext\TeachplanParameter.class
 com\ningmeng\framework\domain\ucenter\response\LoginResult.class

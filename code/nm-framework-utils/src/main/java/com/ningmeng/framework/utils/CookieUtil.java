@@ -35,7 +35,6 @@ public class CookieUtil {
      * @param cookieName1,cookieName2
      * @return map<cookieName,cookieValue>
      */
-
     public static Map<String,String> readCookie(HttpServletRequest request,String ... cookieNames) {
         Map<String,String> cookieMap = new HashMap<String,String>();
             Cookie[] cookies = request.getCookies();

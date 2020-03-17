@@ -9,6 +9,7 @@ import lombok.ToString;
 
 @ToString
 public enum CourseCode implements ResultCode {
+    COURSE_GET_NOTEXISTS(false,31006,"查找信息不存在"),
     COURSE_DENIED_DELETE(false,31001,"删除课程失败，只允许删除本机构的课程！"),
     COURSE_PUBLISH_PERVIEWISNULL(false,31002,"还没有进行课程预览！"),
     COURSE_PUBLISH_CDETAILERROR(false,31003,"创建课程详情页面出错！"),

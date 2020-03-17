@@ -16,6 +16,7 @@ public class NmServiceList {
     public static final String XC_SERVICE_BASE_ID = "xc-service-base-id";
     public static final String XC_SERVICE_MANAGE_ORDER = "xc-service-manage-order";
     public static final String XC_SERVICE_LEARNING = "xc-service-learning";
-    public static final String nm_SERVICE_MANAGE_CMS = "nm-service-manage-cms";
+    public static final String NM_SERVICE_MANAGE_CMS = "nm-service-manage-cms";
+    public static final String NM_SERVICE_UCENTER ="nm_service_ucenter";
 
 }

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa0d6600-f1d0-4e71-9d03-7a6cc4219019" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="package.json" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/层帝/博客云架构/maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\层帝\博客云架构\m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XdutT693dSgh7AWjmy1Rz0h9Vt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/../nm-service-manage-cms/src/main/java/com/ningmeng" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nm-service-manage-order" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.24252874" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ningmeng.order.dao" />
+      <recent name="com.ningmeng.learning.config" />
+      <recent name="com.ningmeng.auth.client" />
+      <recent name="com.ningmeng.manage_media.config" />
+      <recent name="com.ningmeng.manage_course.dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea\code\nm-service-ucenter\src\main\resources\com\ningmeng\ucenter" />
+      <recent name="D:\idea\code\nm-service-ucenter\src\main\resources\com\ningmeng" />
+      <recent name="D:\idea\code\nm-service-ucenter\src\main\resources\com" />
+      <recent name="D:\idea\code\nm-service-ucenter\src\main\resources" />
+      <recent name="D:\idea\code\nm-service-ucenter\src\main\java\com\ningmeng\ucenter\dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ClientTest.clientTest">
+    <configuration name="ClientTest.clientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nm-service-ucenter-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ningmeng.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ningmeng.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.ningmeng.auth.ClientTest" />
+      <option name="METHOD_NAME" value="clientTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtTest.testCreateJwt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nm-service-ucenter-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ningmeng.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ningmeng.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.ningmeng.auth.JwtTest" />
+      <option name="METHOD_NAME" value="testCreateJwt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtTest.testVerify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nm-service-ucenter-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ningmeng.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ningmeng.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.ningmeng.auth.JwtTest" />
+      <option name="METHOD_NAME" value="testVerify" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.RandomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nm-service-ucenter-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ningmeng.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ningmeng.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.ningmeng.auth.RedisTest" />
+      <option name="METHOD_NAME" value="RandomTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.redisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nm-service-ucenter-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ningmeng.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ningmeng.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.ningmeng.auth.RedisTest" />
+      <option name="METHOD_NAME" value="redisTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Govern01" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="nm-govern-center" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ningmeng.goven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ningmeng.goven.GovernCenterApplication" />
+      <option name="VM_PARAMETERS" value="-DPORT=50101 -DEUREKA_SERVER=http://eureka02:50102/eureka/ -DEUREKA_DOMAIN=eureka01" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UcenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="nm-service-ucenter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ningmeng.ucenter.UcenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UcenterAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="nm-service-ucenter-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ningmeng.auth.UcenterAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.JwtTest.testCreateJwt" />
+      <item itemvalue="JUnit.JwtTest.testVerify" />
+      <item itemvalue="JUnit.RedisTest.RandomTest" />
+      <item itemvalue="JUnit.RedisTest.redisTest" />
+      <item itemvalue="JUnit.ClientTest.clientTest" />
+      <item itemvalue="Spring Boot.Govern01" />
+      <item itemvalue="Spring Boot.UcenterAuthApplication" />
+      <item itemvalue="Spring Boot.UcenterApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ClientTest.clientTest" />
+        <item itemvalue="JUnit.RedisTest.redisTest" />
+        <item itemvalue="JUnit.RedisTest.RandomTest" />
+        <item itemvalue="JUnit.JwtTest.testVerify" />
+        <item itemvalue="JUnit.JwtTest.testCreateJwt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa0d6600-f1d0-4e71-9d03-7a6cc4219019" name="Default Changelist" comment="" />
+      <created>1581388506339</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581388506339</updated>
+      <workItem from="1581388509707" duration="6075000" />
+      <workItem from="1581398916408" duration="1729000" />
+      <workItem from="1581474265416" duration="5610000" />
+      <workItem from="1581485669185" duration="1143000" />
+      <workItem from="1581506775728" duration="5482000" />
+      <workItem from="1581565582188" duration="134000" />
+      <workItem from="1581596196496" duration="6525000" />
+      <workItem from="1581681710492" duration="1077000" />
+      <workItem from="1581682803912" duration="1084000" />
+      <workItem from="1581683904467" duration="3470000" />
+      <workItem from="1581769672597" duration="2114000" />
+      <workItem from="1582027134032" duration="5409000" />
+      <workItem from="1582088365731" duration="162000" />
+      <workItem from="1582090774965" duration="1583000" />
+      <workItem from="1582113902292" duration="1640000" />
+      <workItem from="1582163952082" duration="5320000" />
+      <workItem from="1582171536149" duration="20000" />
+      <workItem from="1582171575462" duration="22000" />
+      <workItem from="1582178109326" duration="663000" />
+      <workItem from="1582204027608" duration="7386000" />
+      <workItem from="1582287620850" duration="7146000" />
+      <workItem from="1582515719930" duration="1785000" />
+      <workItem from="1582546248950" duration="2975000" />
+      <workItem from="1582549253450" duration="5424000" />
+      <workItem from="1582555008906" duration="21000" />
+      <workItem from="1582555233238" duration="3000" />
+      <workItem from="1582634054913" duration="3064000" />
+      <workItem from="1582723890947" duration="4642000" />
+      <workItem from="1582809180519" duration="2306000" />
+      <workItem from="1582889405370" duration="3149000" />
+      <workItem from="1583155099348" duration="2860000" />
+      <workItem from="1583223125322" duration="423000" />
+      <workItem from="1583224455901" duration="772000" />
+      <workItem from="1583238085381" duration="6914000" />
+      <workItem from="1583326911081" duration="5587000" />
+      <workItem from="1583408680525" duration="7308000" />
+      <workItem from="1583495454347" duration="4998000" />
+      <workItem from="1583752650795" duration="3962000" />
+      <workItem from="1583759173450" duration="562000" />
+      <workItem from="1583759838564" duration="2529000" />
+      <workItem from="1583840313153" duration="1198000" />
+      <workItem from="1583841809257" duration="7770000" />
+      <workItem from="1583909535443" duration="4000" />
+      <workItem from="1583916747419" duration="1253000" />
+      <workItem from="1583927410638" duration="8358000" />
+      <workItem from="1584015155862" duration="4678000" />
+      <workItem from="1584059762948" duration="5876000" />
+      <workItem from="1584100556148" duration="5069000" />
+      <workItem from="1584357720480" duration="8096000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="650" y="45" key="#Inspections" timestamp="1582516959312">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="650" y="45" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1582516959312" />
+    <state x="705" y="50" key="#Project_Structure" timestamp="1584359564004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="705" y="50" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1584359564004" />
+    <state x="386" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582548701509">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="386" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582548701509" />
+    <state x="521" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584018693333">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="521" y="209" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1584018693333" />
+    <state x="1015" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1584104023394">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="1015" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1584104023394" />
+    <state x="762" y="323" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581599551539">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="762" y="323" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1581599551539" />
+    <state x="757" y="289" width="661" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582549164462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="757" y="289" width="661" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1582549164462" />
+    <state x="894" y="283" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1581599351068">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="894" y="283" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1581599351068" />
+    <state x="513" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584358204290">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="513" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1584358204290" />
+    <state x="835" y="137" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583754020953">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="835" y="137" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583754020953" />
+    <state x="441" y="53" key="FileChooserDialogImpl" timestamp="1584102185338">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="441" y="53" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584102185338" />
+    <state width="1208" height="218" key="GridCell.Tab.0.bottom" timestamp="1583849593077">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1208" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583849593077" />
+    <state width="1208" height="218" key="GridCell.Tab.0.center" timestamp="1583849593077">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1208" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583849593077" />
+    <state width="1208" height="218" key="GridCell.Tab.0.left" timestamp="1583849593077">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1208" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583849593077" />
+    <state width="1208" height="218" key="GridCell.Tab.0.right" timestamp="1583849593077">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1208" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583849593077" />
+    <state width="1208" height="218" key="GridCell.Tab.1.bottom" timestamp="1583849593077">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1208" height="218" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583849593077" />
+    <state width="1208" height="218" key="GridCell.Tab.1.center" timestamp="1583849593077">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1208" height="218" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583849593077" />
+    <state width="1208" height="218" key="GridCell.Tab.1.left" timestamp="1583849593077">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1208" height="218" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583849593077" />
+    <state width="1208" height="218" key="GridCell.Tab.1.right" timestamp="1583849593077">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1208" height="218" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583849593077" />
+    <state width="930" height="225" key="GridCell.Tab.2.bottom" timestamp="1582295254153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="930" height="225" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582295254153" />
+    <state width="930" height="225" key="GridCell.Tab.2.center" timestamp="1582295254153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="930" height="225" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582295254153" />
+    <state width="930" height="225" key="GridCell.Tab.2.left" timestamp="1582295254153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="930" height="225" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582295254153" />
+    <state width="930" height="225" key="GridCell.Tab.2.right" timestamp="1582295254153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="930" height="225" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582295254153" />
+    <state x="588" y="41" key="Maven.ArtifactSearchDialog" timestamp="1582288515973">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="588" y="41" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1582288515973" />
+    <state x="106" y="232" key="NewModule_or_Project.wizard" timestamp="1584102187571">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="106" y="232" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1584102187571" />
+    <state x="365" y="0" key="SettingsEditor" timestamp="1584102190006">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="365" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584102190006" />
+    <state x="885" y="203" key="chooseDestDirectoryDialog" timestamp="1582549158122">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="885" y="203" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1582549158122" />
+    <state x="764" y="155" key="com.intellij.ide.util.TipDialog" timestamp="1584357721807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="764" y="155" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584357721807" />
+    <state x="440" y="380" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582548843712">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="440" y="380" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1582548843712" />
+    <state x="231" y="84" width="1180" height="583" key="new project wizard" timestamp="1582547292288">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="231" y="84" width="1180" height="583" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1582547292288" />
+    <state x="446" y="218" width="672" height="677" key="run.anything.popup" timestamp="1584100888630">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="446" y="218" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584100888630" />
+    <state x="618" y="162" width="672" height="678" key="search.everywhere.popup" timestamp="1584366807289">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="618" y="162" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584366807289" />
+  </component>
+</project>

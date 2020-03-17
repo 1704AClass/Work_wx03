@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="nm-govern-center" />
+        <module name="nm-service-learning" />
+        <module name="nm-service-search" />
+        <module name="nm-framework-utils" />
+        <module name="nm-govern-gateway" />
+        <module name="nm-service-manage-cms" />
+        <module name="test-rabbitmq-consumer" />
+        <module name="test_rabbitmq-producer" />
+        <module name="nm-framework-common" />
+        <module name="test-rabbitmq-producer" />
+        <module name="nm-service-base-filesystem" />
+        <module name="nm-service-api" />
+        <module name="nm-service-manage-media-processor" />
+        <module name="nm-framework-model" />
+        <module name="nm-service-manage-course" />
+        <module name="nm-service-ucenter" />
+        <module name="nm-service-manage-order" />
+        <module name="nm-service-manage-cms-client" />
+        <module name="nm-service-manage-media" />
+        <module name="nm-service-ucenter-auth" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="nm-framework-common" target="1.8" />
+      <module name="nm-framework-model" target="1.8" />
+      <module name="nm-framework-parent" target="1.8" />
+      <module name="nm-framework-utils" target="1.8" />
+      <module name="nm-govern-center" target="1.8" />
+      <module name="nm-govern-gateway" target="1.8" />
+      <module name="nm-service-api" target="1.8" />
+      <module name="nm-service-base-filesystem" target="1.8" />
+      <module name="nm-service-learning" target="1.8" />
+      <module name="nm-service-manage-cms" target="1.8" />
+      <module name="nm-service-manage-cms-client" target="1.8" />
+      <module name="nm-service-manage-course" target="1.8" />
+      <module name="nm-service-manage-media" target="1.8" />
+      <module name="nm-service-manage-media-processor" target="1.8" />
+      <module name="nm-service-manage-order" target="1.8" />
+      <module name="nm-service-search" target="1.8" />
+      <module name="nm-service-ucenter" target="1.8" />
+      <module name="nm-service-ucenter-auth" target="1.8" />
+      <module name="test-rabbitmq-consumer" target="1.8" />
+      <module name="test-rabbitmq-producer" target="1.8" />
+      <module name="test_rabbitmq-producer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="nm-framework-common" options="-parameters" />
+      <module name="nm-framework-model" options="-parameters" />
+      <module name="nm-framework-utils" options="-parameters" />
+      <module name="nm-govern-center" options="-parameters" />
+      <module name="nm-govern-gateway" options="-parameters" />
+      <module name="nm-service-api" options="-parameters" />
+      <module name="nm-service-base-filesystem" options="-parameters" />
+      <module name="nm-service-learning" options="-parameters" />
+      <module name="nm-service-manage-cms" options="-parameters" />
+      <module name="nm-service-manage-cms-client" options="-parameters" />
+      <module name="nm-service-manage-course" options="-parameters" />
+      <module name="nm-service-manage-media" options="-parameters" />
+      <module name="nm-service-manage-media-processor" options="-parameters" />
+      <module name="nm-service-manage-order" options="-parameters" />
+      <module name="nm-service-search" options="-parameters" />
+      <module name="nm-service-ucenter" options="-parameters" />
+      <module name="nm-service-ucenter-auth" options="-parameters" />
+      <module name="test-rabbitmq-consumer" options="-parameters" />
+      <module name="test-rabbitmq-producer" options="-parameters" />
+      <module name="test_rabbitmq-producer" options="-parameters" />
+    </option>
+  </component>
+</project>
